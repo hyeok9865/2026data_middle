@@ -1,0 +1,17 @@
+﻿model,brand,segment,mentions,opinion_mentions,sources,expert_sources,user_sources,pos,neg,satisfaction,avg_tone,attention,coverage,satisfaction_f,score
+Logitech G PRO X SUPERLIGHT,Logitech,플래그십,65,23,13,0,13,21,6,77.8,0.105,95.3,34.2,77.8,75.2
+Zowie U2,Zowie,플래그십,33,10,4,0,4,17,0,100.0,0.182,80.2,10.5,100.0,75.2
+Logitech G PRO X SUPERLIGHT 2,Logitech,플래그십,80,33,12,1,11,36,14,72.0,0.1,100.0,31.6,72.0,73.7
+Logitech G304 / G305,Logitech,보급,57,27,12,3,9,28,12,70.0,0.089,92.4,31.6,70.0,70.2
+ATK / VXE (잠자리),ATK,보급,57,30,9,3,6,38,17,69.1,0.102,92.4,23.7,69.1,68.2
+Razer Viper V4 Pro,Razer,플래그십,9,6,4,1,3,6,0,100.0,0.333,52.4,10.5,100.0,65.4
+Razer Viper V3 Pro,Razer,플래그십,39,9,6,2,4,8,3,72.7,0.064,83.9,15.8,72.7,65.2
+Razer Basilisk V3 Pro,Razer,중급,13,4,8,4,4,6,1,85.7,0.141,60.1,21.1,85.7,63.8
+Pulsar X2 / X2V2,Pulsar,중급,7,5,1,0,1,10,0,100.0,0.436,47.3,2.6,100.0,62.1
+Logitech G PRO 2 / SUPERSTRIKE,Logitech,플래그십,12,6,3,1,2,5,1,83.3,0.167,58.4,7.9,83.3,59.5
+Razer DeathAdder V4 Pro,Razer,플래그십,8,1,3,2,1,1,0,,0.062,50.0,7.9,50.0,41.6
+Logitech G PRO X SUPERLIGHT 2 DEX,Logitech,플래그십,8,2,2,0,2,2,0,,0.125,50.0,5.3,50.0,41.1
+Logitech G502 X,Logitech,중급,7,3,3,2,1,2,2,50.0,0.048,47.3,7.9,50.0,40.6
+Razer DeathAdder V3 Pro,Razer,플래그십,7,1,3,1,2,1,0,,0.071,47.3,7.9,50.0,40.6
+Lamzu Maya X,Lamzu,중급,10,4,1,1,0,4,5,44.4,0.021,54.6,2.6,44.4,39.6
+Logitech G102 / G203,Logitech,보급,8,2,3,0,3,1,3,25.0,-0.094,50.0,7.9,25.0,30.3

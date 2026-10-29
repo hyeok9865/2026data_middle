@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+
+# 개인/스크래핑 원본은 배포하지 않음
+data/raw/
+test_result.txt
+build_check*.js
+
+__pycache__/
+*.pyc
+.venv/
+venv/

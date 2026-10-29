@@ -1,0 +1,261 @@
+{
+  "generated": "2026-10-30",
+  "models": [
+    {
+      "key": "Logitech G PRO X SUPERLIGHT 2",
+      "name": "지슈라2",
+      "full": "Logitech G PRO X SUPERLIGHT 2",
+      "brand": "Logitech",
+      "metrics": {
+        "mentions": 80,
+        "opinion": 33,
+        "sources": 12,
+        "satisfaction": 72.0,
+        "attention": 100.0,
+        "coverage": 31.6,
+        "score": 73.7,
+        "neg_ratio": 10.0
+      },
+      "spec": {
+        "weight_g": 60,
+        "sensor": "HERO 2",
+        "max_dpi": 32000,
+        "ips": 500,
+        "accel_g": 40,
+        "polling_hz": 2000,
+        "polling_note": "DEX 모델 8,000Hz",
+        "switch": "LIGHTFORCE 하이브리드",
+        "battery_h": 95,
+        "software": "G HUB",
+        "price_krw": [
+          180000,
+          220000
+        ],
+        "price_label": "18~22만원",
+        "shape": "대칭형 · 미들"
+      },
+      "radar": [
+        72.0,
+        100.0,
+        94.80000000000001,
+        40,
+        75.0
+      ],
+      "pros": [
+        "롤이나 배틀그라운드와 같이 잠깐의 순간에 정확한 조작을 해야 하는 장르의 게임을 플레이하는 유저들이라면 이 트래킹 최적화의 덕을 충분히 볼 수 있을 것 같습니다.<br ​<br ​<br <br <br 이번 로지텍G PRO X SUPERLIGHT 2 DEX에서 보여준 8",
+        "사실 좌우 클릭은 크게 손 댈 필요 없을 것 같고, 엄지로 누를 수 있는 추가 버튼들에 특정 키보드의 키를 배치한다거나 빠르게 입력하기에 번거로운 콤보 같은 매크로를 넣어서 클릭 한 번에 이런 작업이 가능하게 만들어 주는 것이 생각보다 더 편리했습니다.<br ​<br ",
+        "특히 빠른 속도로 적을 쓰러트려야 승리를 거머쥘 수 있는 배틀그라운드, 리그 오브 레전드와 같은 게임에서는 게이밍 마우스의 활약이 빛을 발하죠.<br <br 이런 이유로 지난 포스팅에서 초경량의 가벼움과 전작 대비 업그레이드된 성능을 바탕으로 편안하고 정확한 컨트롤이 "
+      ],
+      "cons": [
+        "A1: G PRO X SUPERLIGHT 2 DEX는 오른손 사용자에게 최적화된 비대칭형 디자인으로, 왼손잡이 사용자에게는 다소 불편할 수 있습니다.",
+        "로지텍 지슈라2 반년 실사용 리뷰 장단점(내돈내산!!) : 네이버 블로그",
+        "--- --- --- \n Daily life<br 로지텍 지슈라2 반년 실사용 리뷰 장단점(내돈내산!!)<br EUNUN_・_ 2024\\."
+      ],
+      "keywords": {
+        "pos": 25,
+        "neg": 10
+      }
+    },
+    {
+      "key": "Razer Viper V3 Pro",
+      "name": "Viper V3 Pro",
+      "full": "Razer Viper V3 Pro",
+      "brand": "Razer",
+      "metrics": {
+        "mentions": 39,
+        "opinion": 9,
+        "sources": 6,
+        "satisfaction": 72.7,
+        "attention": 83.9,
+        "coverage": 15.8,
+        "score": 65.2,
+        "neg_ratio": 5.1
+      },
+      "spec": {
+        "weight_g": 54,
+        "sensor": "Focus Pro 35K (2세대)",
+        "max_dpi": 35000,
+        "ips": null,
+        "accel_g": null,
+        "polling_hz": 8000,
+        "polling_note": "무선 8,000Hz / 유선 1,000Hz",
+        "switch": "3세대 옵티컬",
+        "battery_h": null,
+        "software": "Razer Synapse",
+        "price_krw": [
+          179000,
+          239000
+        ],
+        "price_label": "17.9~23.9만원",
+        "shape": "대칭형 · 로우"
+      },
+      "radar": [
+        72.7,
+        83.9,
+        47.400000000000006,
+        64,
+        67.5
+      ],
+      "pros": [
+        "특히 FPS 게임에서 최고의 반응 속도와 정밀도를 원하는 이들을 위해 Razer가 선보인 최신 무선 마우스 Viper V3 Pro 는 프로 게이밍을 지향하는 유저들에게 강력한 선택지가 되고 있습니다.",
+        "Viper V3 Pro는 단순히 좋은 마우스를 넘어, 프 로급 퍼포먼스를 원하는 사용자에게 최적화된 무기입니다.",
+        "또한 Viper V3 Pro의 경우 Viper V2 pro에 비해 후면이 조금 좁게 느껴지며 손바닥의 접촉면을 많고 손바닥을 지지하는데 좀 더 높은 만족감을 느껴졌습니다."
+      ],
+      "cons": [
+        "<br 지연 시간 테스트 LATENCY TIME TEST<br Razer Viper V3 Pro Latency - YouTube<br Tap to unmute<br Razer Viper V3 Pro Latency Q STATION<br <br Q STATION3.15K",
+        "레이저 광학 스위치가 일반 기계식 스위치보다 발생하는 소음이 작은 편이긴 했는데, 바이퍼 V3 프로는 그보다 더 작아지고 균일해졌습니다."
+      ],
+      "keywords": {
+        "pos": 5,
+        "neg": 3
+      }
+    },
+    {
+      "key": "Zowie U2",
+      "name": "Zowie U2",
+      "full": "Zowie U2",
+      "brand": "Zowie",
+      "metrics": {
+        "mentions": 33,
+        "opinion": 10,
+        "sources": 4,
+        "satisfaction": 100.0,
+        "attention": 80.2,
+        "coverage": 10.5,
+        "score": 75.2,
+        "neg_ratio": 0.0
+      },
+      "spec": {
+        "weight_g": 60,
+        "sensor": "PixArt PAW3950",
+        "max_dpi": 32000,
+        "ips": null,
+        "accel_g": null,
+        "polling_hz": 4000,
+        "polling_note": "U2-DW 기준. 기본 U2는 1,000Hz",
+        "switch": "기계식",
+        "battery_h": 80,
+        "software": "불필요 (본체 버튼)",
+        "price_krw": [
+          251500,
+          276650
+        ],
+        "price_label": "약 25~27만원",
+        "shape": "대칭형 · 미들 (FPS)"
+      },
+      "radar": [
+        100.0,
+        80.2,
+        31.5,
+        40,
+        21.6
+      ],
+      "pros": [
+        "바로 오늘 리뷰해드리는 벤큐 조위 U2가 완벽한 대안이라 생각한다.",
+        "Alt Tab이나 윈도우 버튼으로 화면 돌아갈 필요없이 장비 자체에서 변경을 할 수 있으니, 플레이에 오롯이 집중할 수 있게끔 한다.<br ​<br <br 결과적으로 벤큐 조위 u2 게이밍마우스 매우 만족하며 사용하고 있다.",
+        "최근 초경량 마우스들이 많이 출시되고 있지만, 조위 U2-DW는 60g의 무게로 가볍지만 날림이 적어 정교한 브레이킹이 가능하며 안정감을 주는 황금 밸런스 무게를 제공합니다."
+      ],
+      "cons": [],
+      "keywords": {
+        "pos": 10,
+        "neg": 0
+      }
+    }
+  ],
+  "radar_axes": [
+    "만족도",
+    "인기도",
+    "근거량",
+    "경량성",
+    "가격접근성"
+  ],
+  "comparison_rows": [
+    {
+      "label": "무게",
+      "values": [
+        "60g",
+        "54g",
+        "60g"
+      ],
+      "best": "min"
+    },
+    {
+      "label": "센서",
+      "values": [
+        "HERO 2",
+        "Focus Pro 35K (2세대)",
+        "PixArt PAW3950"
+      ],
+      "best": null
+    },
+    {
+      "label": "최대 DPI",
+      "values": [
+        "32,000",
+        "35,000",
+        "32,000"
+      ],
+      "best": "max"
+    },
+    {
+      "label": "폴링레이트",
+      "values": [
+        "2,000Hz",
+        "8,000Hz",
+        "4,000Hz"
+      ],
+      "best": "max"
+    },
+    {
+      "label": "스위치",
+      "values": [
+        "LIGHTFORCE 하이브리드",
+        "3세대 옵티컬",
+        "기계식"
+      ],
+      "best": null
+    },
+    {
+      "label": "배터리",
+      "values": [
+        "95시간",
+        "미확인",
+        "80시간"
+      ],
+      "best": "max"
+    },
+    {
+      "label": "소프트웨어",
+      "values": [
+        "G HUB",
+        "Razer Synapse",
+        "불필요 (본체 버튼)"
+      ],
+      "best": null
+    },
+    {
+      "label": "형태",
+      "values": [
+        "대칭형 · 미들",
+        "대칭형 · 로우",
+        "대칭형 · 미들 (FPS)"
+      ],
+      "best": null
+    },
+    {
+      "label": "국내가",
+      "values": [
+        "18~22만원",
+        "17.9~23.9만원",
+        "약 25~27만원"
+      ],
+      "best": "min"
+    }
+  ],
+  "totals": {
+    "sources": 38,
+    "sentences": 2685,
+    "matches": 420,
+    "chars": 900000
+  }
+}
