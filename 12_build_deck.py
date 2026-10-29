@@ -13,6 +13,13 @@ if "__DATA__" in html:
     raise SystemExit("데이터 주입 실패")
 
 Path("deck/index.html").write_text(html, encoding="utf-8")
-print(f"deck/index.html 생성 ({len(html):,} bytes)")
+
+# GitHub Pages 배포용 (/docs 를 Pages 소스로 사용)
+docs = Path("docs")
+docs.mkdir(exist_ok=True)
+(docs / "index.html").write_text(html, encoding="utf-8")
+(docs / ".nojekyll").write_text("", encoding="utf-8")
+
+print(f"deck/index.html + docs/index.html 생성 ({len(html):,} bytes)")
 print(f"  모델: {[m['name'] for m in data['models']]}")
 print(f"  스펙 행: {len(data['comparison_rows'])}")
