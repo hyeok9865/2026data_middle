@@ -140,9 +140,17 @@ h3{font-size:clamp(17px,1.35vw,21px);font-weight:700;letter-spacing:-.02em}
 .box{padding:22px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.028)}
 .box h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px}
 .box.p h4{color:var(--lime)} .box.n h4{color:#fb7185}
-.box li{list-style:none;font-size:13.5px;line-height:1.65;color:#c2cbdb;padding-left:16px;position:relative;margin-bottom:9px}
+.box li{list-style:none;font-size:13.5px;line-height:1.6;color:#c2cbdb;padding-left:16px;position:relative;margin-bottom:10px}
 .box li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%}
 .box.p li::before{background:var(--lime)} .box.n li::before{background:#fb7185}
+.basis{display:inline-block;font-size:9.5px;letter-spacing:.06em;padding:1px 6px;border-radius:5px;
+  border:1px solid var(--line);color:var(--muted);margin-right:7px;vertical-align:1.5px;font-weight:600}
+.basis[data-b="리뷰"]{color:#7dd3fc;border-color:rgba(125,211,252,.35);background:rgba(125,211,252,.08)}
+.basis[data-b="스펙"]{color:#c4b5fd;border-color:rgba(196,181,253,.35);background:rgba(196,181,253,.08)}
+.basis[data-b="데이터"]{color:var(--amber);border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.08)}
+.fb-row{display:grid;grid-template-columns:96px 1fr 64px;gap:12px;align-items:center;margin-bottom:14px;font-size:13px}
+.fb-track{height:26px;border-radius:7px;background:rgba(255,255,255,.06);overflow:hidden;display:flex}
+.fb-seg{height:100%;transition:width 1s ease}
 
 /* ---------- verdict ---------- */
 .verdict{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
@@ -241,9 +249,10 @@ h3{font-size:clamp(17px,1.35vw,21px);font-weight:700;letter-spacing:-.02em}
     <h2 class="rv d1">스펙 정면 비교</h2>
     <table class="tbl" id="specTable">
       <thead><tr><th>항목</th><th style="color:var(--c1)">지슈라2</th><th style="color:var(--c2)">Viper V3 Pro</th><th style="color:var(--c3)">Zowie U2</th></tr></thead>
-      <tbody id="specBody"></tbody>
+      <tbody>{{SPEC_ROWS}}</tbody>
     </table>
     <div class="note rv d8">모든 수치는 수집 원문(퀘이사존 사용기·네이버 블로그·노써치)에서 확인된 값. 초록색 = 해당 항목 우위.</div>
+    <div class="note rv d8" style="border-left-color:rgba(34,211,238,.3)">{{SPEC_NOTES}}</div>
   </section>
 
   <!-- 5 BAR: mentions + satisfaction -->
@@ -286,11 +295,11 @@ h3{font-size:clamp(17px,1.35vw,21px);font-weight:700;letter-spacing:-.02em}
 
   <!-- 7 NEGATIVE -->
   <section class="slide">
-    <div class="kicker rv">06 · Risk</div>
-    <h2 class="rv d1">부정 반응은 어디서 나오나</h2>
-    <p class="lead rv d2">전체 420건 중 부정 우세 문장은 36건(8.6%)뿐. 모델별로는 이렇게 갈립니다.</p>
+    <div class="kicker rv">06 · Balance</div>
+    <h2 class="rv d1">긍정 vs 부정 — 표본의 무게</h2>
+    <p class="lead rv d2">모델별 인용문에서 긍정어·부정어가 차지하는 비중입니다. Viper V3 Pro는 부정 신호 자체가 거의 수집되지 않았습니다.</p>
     <div class="chart-wrap rv d3" style="height:min(46vh,340px)"><canvas id="negChart"></canvas></div>
-    <div class="note rv d4">부정 비율이 낮은 것은 “제품이 좋다”기보다 <b>수집 소스가 구조적으로 우호적</b>이기 때문입니다(제품 대여·원고료·제휴링크 문서 다수).</div>
+    <div class="note rv d4">부정 비중이 낮은 것은 “제품이 좋다”기보다 <b>수집 소스가 구조적으로 우호적</b>이기 때문입니다(제품 대여·원고료·제휴링크 문서 다수).</div>
   </section>
 
   <!-- 8 MODEL A -->
@@ -298,8 +307,8 @@ h3{font-size:clamp(17px,1.35vw,21px);font-weight:700;letter-spacing:-.02em}
     <div class="kicker rv" style="color:var(--c1)">07 · Model A</div>
     <h2 class="rv d1">지슈라2 <span style="font-size:.5em;color:var(--muted);font-weight:600">G PRO X SUPERLIGHT 2</span></h2>
     <div class="pc">
-      <div class="box p rv d2"><h4>강점</h4><ul id="pros0"></ul></div>
-      <div class="box n rv d3"><h4>약점 · 리스크</h4><ul id="cons0"></ul></div>
+      <div class="box p rv d2"><h4>강점</h4><ul>{{PROS_0}}</ul></div>
+      <div class="box n rv d3"><h4>약점 · 리스크</h4><ul>{{CONS_0}}</ul></div>
     </div>
     <div class="note rv d4">60g · HERO 2 · 2,000Hz(DEX 8,000Hz) · LIGHTFORCE 하이브리드 · 95시간 · 18~22만원</div>
   </section>
@@ -309,8 +318,8 @@ h3{font-size:clamp(17px,1.35vw,21px);font-weight:700;letter-spacing:-.02em}
     <div class="kicker rv" style="color:var(--c2)">08 · Model B</div>
     <h2 class="rv d1">Viper V3 Pro <span style="font-size:.5em;color:var(--muted);font-weight:600">Razer</span></h2>
     <div class="pc">
-      <div class="box p rv d2"><h4>강점</h4><ul id="pros1"></ul></div>
-      <div class="box n rv d3"><h4>약점 · 리스크</h4><ul id="cons1"></ul></div>
+      <div class="box p rv d2"><h4>강점</h4><ul>{{PROS_1}}</ul></div>
+      <div class="box n rv d3"><h4>약점 · 리스크</h4><ul>{{CONS_1}}</ul></div>
     </div>
     <div class="note rv d4">54g · Focus Pro 35K · 무선 8,000Hz · 3세대 옵티컬 스위치 · 17.9~23.9만원</div>
   </section>
@@ -320,8 +329,8 @@ h3{font-size:clamp(17px,1.35vw,21px);font-weight:700;letter-spacing:-.02em}
     <div class="kicker rv" style="color:var(--c3)">09 · Model C</div>
     <h2 class="rv d1">Zowie U2 <span style="font-size:.5em;color:var(--muted);font-weight:600">U2-DW 무선</span></h2>
     <div class="pc">
-      <div class="box p rv d2"><h4>강점</h4><ul id="pros2"></ul></div>
-      <div class="box n rv d3"><h4>약점 · 리스크</h4><ul id="cons2"></ul></div>
+      <div class="box p rv d2"><h4>강점</h4><ul>{{PROS_2}}</ul></div>
+      <div class="box n rv d3"><h4>약점 · 리스크</h4><ul>{{CONS_2}}</ul></div>
     </div>
     <div class="note rv d4">60g · PAW3950 · 4,000Hz · DPI/폴링/LOD 본체 버튼 조절 · 약 25~27만원</div>
   </section>
@@ -409,25 +418,20 @@ addEventListener('touchend', e=>{
   if(Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)) go(idx + (dx<0?1:-1));
 },{passive:true});
 
-/* ---------- spec table ---------- */
-function parseNum(s){const m=String(s).replace(/,/g,'').match(/[\d.]+/); return m?parseFloat(m[0]):null;}
-function buildTable(){
-  const body=document.getElementById('specBody');
-  DATA.comparison_rows.forEach(row=>{
-    const tr=document.createElement('tr');
-    let winner=-1;
-    if(row.best){
-      const nums=row.values.map(parseNum);
-      const valid=nums.map((v,i)=>[v,i]).filter(([v])=>v!==null);
-      if(valid.length===3){
-        const target = row.best==='min' ? Math.min(...valid.map(v=>v[0])) : Math.max(...valid.map(v=>v[0]));
-        winner = valid.find(([v])=>v===target)[1];
-      }
-    }
-    tr.innerHTML = '<td>'+row.label+'</td>' + row.values.map((v,i)=>
-      '<td class="'+(i===winner?'win':'')+'">'+v+'</td>').join('');
-    body.appendChild(tr);
-  });
+/* ---------- chart 미로딩 시 정적 폴백 ---------- */
+function fallbackBars(id, rows){
+  const el = document.getElementById(id);
+  if(!el) return;
+  const wrap = el.parentElement;
+  wrap.innerHTML = rows.map(r => `
+    <div class="fb-row">
+      <span style="color:#c2cbdb">${r.label}</span>
+      <div class="fb-track">
+        <div class="fb-seg" style="width:${r.a}%;background:${r.ca}"></div>
+        <div class="fb-seg" style="width:${100-r.a}%;background:${r.cb}"></div>
+      </div>
+      <b style="text-align:right;font-variant-numeric:tabular-nums">${r.a}%</b>
+    </div>`).join('');
 }
 
 /* ---------- charts ---------- */
@@ -439,6 +443,10 @@ Chart.defaults.color='#8b95ab';
 
 function barChart(){
   if(charts.bar) return;
+  if(typeof Chart === 'undefined'){
+    fallbackBars('barChart', M.map(m=>({label:m.name, a:m.metrics.satisfaction||0, ca:'#22d3ee', cb:'#1e2430'})));
+    return;
+  }
   charts.bar = new Chart(document.getElementById('barChart'),{
     type:'bar',
     data:{
@@ -470,6 +478,7 @@ function barChart(){
 
 function radarChart(){
   if(charts.radar) return;
+  if(typeof Chart === 'undefined') return;
   charts.radar = new Chart(document.getElementById('radarChart'),{
     type:'radar',
     data:{
@@ -495,35 +504,39 @@ function radarChart(){
 
 function negChart(){
   if(charts.neg) return;
+  const pos = M.map(m=>m.keywords.pos), neg = M.map(m=>m.keywords.neg);
+  const share = pos.map((p,i)=> Math.round(p/(p+neg[i])*1000)/10);
+  if(typeof Chart === 'undefined'){
+    fallbackBars('negChart', M.map((m,i)=>({label:m.name, a:share[i], ca:'#22d3ee', cb:'#fb7185'})));
+    return;
+  }
   charts.neg = new Chart(document.getElementById('negChart'),{
     type:'bar',
     data:{
       labels:M.map(m=>m.name),
-      datasets:[{
-        label:'부정 우세 문장 비율 (%)', data:M.map(m=>m.metrics.neg_ratio),
-        backgroundColor:C.map(c=>c+'bb'), borderRadius:8, borderSkipped:false, barThickness:44
-      }]
+      datasets:[
+        {label:'긍정어 비중 (%)', data:share, backgroundColor:'#22d3eecc', borderRadius:{topLeft:8,bottomLeft:8},
+         borderSkipped:false, barThickness:40, stack:'s'},
+        {label:'부정어 비중 (%)', data:share.map(v=>Math.round((100-v)*10)/10), backgroundColor:'#fb7185cc',
+         borderRadius:{topRight:8,bottomRight:8}, borderSkipped:false, barThickness:40, stack:'s'}
+      ]
     },
     options:{
       indexAxis:'y', responsive:true, maintainAspectRatio:false,
-      animation:{duration:1100, easing:'easeOutQuart', delay:(c)=>c.dataIndex*160},
-      plugins:{legend:{display:false},
+      animation:{duration:1100, easing:'easeOutQuart', delay:(c)=>c.dataIndex*150},
+      plugins:{legend:{labels:{boxWidth:10,boxHeight:10,usePointStyle:true,pointStyle:'circle',padding:18}},
         tooltip:{backgroundColor:'#11151d',borderColor:'rgba(255,255,255,.12)',borderWidth:1,
-          callbacks:{label:(c)=> c.parsed.x+'%  (표본 '+M[c.dataIndex].metrics.mentions+'건)'}}},
+          callbacks:{label:(c)=>{
+            const i=c.dataIndex;
+            return c.datasetIndex===0
+              ? `긍정어 ${pos[i]}회 (${share[i]}%)`
+              : `부정어 ${neg[i]}회 (${Math.round((100-share[i])*10)/10}%)`;
+          }}}},
       scales:{
-        x:{min:0,max:20,grid:{color:gridC},ticks:{...axis,callback:v=>v+'%'}},
-        y:{grid:{display:false},ticks:{...axis,font:{family:'Pretendard',size:13,weight:'600'}}}
+        x:{stacked:true,min:0,max:100,grid:{color:gridC},ticks:{...axis,callback:v=>v+'%'}},
+        y:{stacked:true,grid:{display:false},ticks:{...axis,font:{family:'Pretendard',size:13,weight:'600'}}}
       }
     }
-  });
-}
-
-/* ---------- lists ---------- */
-function fillLists(){
-  M.forEach((m,i)=>{
-    const p=document.getElementById('pros'+i), c=document.getElementById('cons'+i);
-    if(p) p.innerHTML = (m.pros.length?m.pros:['수집된 긍정 문장이 충분하지 않습니다.']).map(t=>'<li>'+t+'</li>').join('');
-    if(c) c.innerHTML = (m.cons.length?m.cons:['뚜렷한 부정 문장이 수집되지 않았습니다(표본 부족).']).map(t=>'<li>'+t+'</li>').join('');
   });
 }
 
@@ -553,7 +566,9 @@ function runSlide(i){
 }
 
 /* ---------- init ---------- */
-buildTable(); fillLists();
+if(typeof Chart === 'undefined'){
+  fallbackBars('barChart', M.map(m=>({label:m.name, a:m.metrics.satisfaction||0, ca:'#22d3ee', cb:'#1e2430'})));
+}
 document.getElementById('bar').style.width=(1/slides.length*100)+'%';
 dots.children[0].classList.add('on');
 countUp();
