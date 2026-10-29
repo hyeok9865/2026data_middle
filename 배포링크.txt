@@ -1,0 +1,24 @@
+게이밍 마우스 리뷰 데이터 분석 (2026)
+==========================================
+
+[배포용 링크 — 슬라이드 덱]
+https://hyeok9865.github.io/gaming-mouse-review-deck/
+
+
+[자료 저장소 — 2026data_middle]
+https://github.com/hyeok9865/2026data_middle
+
+
+[덱 소스 저장소]
+https://github.com/hyeok9865/gaming-mouse-review-deck
+
+
+------------------------------------------
+포함 자료
+- 슬라이드 덱 (12장, 애니메이션 + 차트)
+- 리뷰 분석 리포트 (report.md)
+- 분석 데이터 (data/*.csv, 420건 근거 문장)
+- 수집·분석 파이프라인 (01~13.py)
+- 엑셀 요약 (게이밍마우스_리뷰분석.xlsx)
+
+생성일: 2026-10-30
